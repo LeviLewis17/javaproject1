@@ -5,6 +5,9 @@ import java.util.Scanner;
 public class TweetTester {
 
 	public static void main(String[] args) {
+		//For the sake of this project, I am reading from the trainingProcessed file and writing
+		//the tweets with their predictions into outputFile. Additionally, the trainingProcessed
+		//file will be updated each run to reflect any removes that could have taken place.
 		AllTweets tweetLibrary = new AllTweets("C:\\Users\\Levi Lewis\\git\\javaproject1\\twitterProject\\trainingProcessed.txt", 
 				"C:\\Users\\Levi Lewis\\git\\javaproject1\\outputFile.txt");
 		Scanner readLineMain = new Scanner(System.in);
