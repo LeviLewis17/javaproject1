@@ -30,12 +30,16 @@ public class AllTweets {
 		outFile = fn2;
 	}
 	
+	public int size() {
+		return size;
+	}
+	
 	public void addTweet(Tweet t) {
 		allTweets.put(t.getID(), t);
 		size++;
 	}
 	
-	public void addTweetFromKeyboard() {
+/*	public void addTweetFromKeyboard() {
 		long id;
 		String tweet;
 		int polarity;
@@ -62,7 +66,7 @@ public class AllTweets {
 		
 		readLine.close();
 	}
-	
+*/
 	public void remove(Tweet t) {
 		try {
 			allTweets.remove(t.getID(), t);
